@@ -13,18 +13,23 @@ function App() {
 
       <Header />
       <section className="max-w-9xl ml-20 mr-20">
-      <section className="mt-8 ml-8">
-        <Breadcumb /></section>
-      <section className="float-left w-5xl">
-        <ProductsList /></section>
-      <section className="algin-right w-xl" >
-        <Search />
-    
-        <Popularity />
-      
-        <Products />
+        <section className="mt-8 ml-8">
+          <Breadcumb /></section>
+        <section className="float-left w-5xl">
+          <ProductsList /></section>
+        <section className="algin-right w-xl " >
+          <Search />
+
+          <Popularity />
+
+        </section>
+        <section className="algin-right w-xl " >
+        
+
+          <Products />
+
+        </section>
       </section>
-</section>
     </div>
   );
 }
