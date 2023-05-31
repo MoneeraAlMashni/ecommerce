@@ -17,24 +17,24 @@ const Products = () => {
                 console.log(err.message);
             });
     }, []);
+
     return (
-        <div className='float-right  w-60 mr-10  h-80 ml-0 mb-10 mt-10 '>
+        <div className="mr-10 mt-10  ">
+
             <h1 className="text-violet-500 border-b-2 text-3xl font-thin text-left ">Products</h1>
 
-            <div className="float-right  w-60 mr-10 overflow-y-scroll h-80 ml-0 mb-10 ">
-
-
+            <div className="float-right w-auto lg:w-60 mr-10 overflow-y-scroll h-80 ml-0 mb-10 ">
                 {posts && posts.map(product => (
-
-                    <li key={product.id} className="flex py-4 first:pt-0 last:pb-0">
+                    <li key={product.id} className="flex py-4 first:pt-0 last:pb-0 border border-slate-200 border-t-0 ">
                         <div className=" overflow-hidden mx-2 flex-w-2xl">
                             <p className="text-sm font-medium justify-text-left font-extrabold text-violet-800 inline">{product.title}</p>
-                            <button className='float-right px-3 border ml-20 border-slate-300 '>
+                           
+                            <button className='float-right px-3  ml-20 '>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
                                     fill="gray"
-                                    className="h-4 w-4 items-right justify-between ">
+                                    className="h-4 w-4 items-right justify-between float-right ">
                                     <path
                                         d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />
                                     <path
@@ -43,7 +43,8 @@ const Products = () => {
                                         clip-rule="evenodd" />
                                 </svg>
                             </button>
-                            <p className="text-sm text-slate-500 border-b-2 text-left ">{product.price}</p>
+                            
+                            <p className="text-sm text-slate-500  text-left ">{product.price}</p>
                         </div>
                     </li>
                 ))}
