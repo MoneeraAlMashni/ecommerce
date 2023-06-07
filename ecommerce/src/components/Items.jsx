@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from 'react';
 
 
-const Items = () => {
+const Items = ({ sharedData, updateSharedData }) => {
     const [productCount, setProductCount] = useState(0);
-  
+    const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+
     useEffect(() => {
       const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
       setProductCount(storedProducts.length);
-    }, [localStorage.getItem('products')]);
+    },[storedProducts]);
+    
+    const handleClick = () => {
+        // updateSharedData('New data from Sibling 1');
+      };
   
     return (
         <>
-            <p className="inline">{productCount}</p>
+            <p className = "inline" onChange = {handleClick}>{productCount}</p>
+
         </>
     );
 };

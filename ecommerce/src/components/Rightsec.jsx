@@ -7,7 +7,7 @@ import Search from '../components/Search'
 const Rightsec = () => {
 
     return (
-        <div className="float-right lg:w-50 sm:float-center sm:algin-center sm:w-xl">
+        <div className = "float-right lg: w-50 sm: float-center sm: algin-center sm: w-xl">
 
          <Search />
          <Popularity />
