@@ -30,10 +30,6 @@ function ProductsList({ sharedData, updateSharedData }) {
             });
     }, []);
 
-    // useEffect(() => {
-    //     handleClick();
-    //   }, [sharedData]);
-
     const cartProduct = (data) => {
         const updatedData = [...storageData, data];
         setStorageData(updatedData);
