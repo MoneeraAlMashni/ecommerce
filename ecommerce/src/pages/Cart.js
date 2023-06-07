@@ -39,9 +39,6 @@ const Cart = () => {
                 alt = {product.imageAlt}
                 className = "h-full w-full object-center lg:h-full lg:w-full"
               />
-              <div className = "absolute inline-flex items-center justify-center w-12 h-14 text-m font-bold text-white bg-green-500 rounded-full -top-2 -right-2 ">
-                Sale!
-              </div>
             </div>
 
             <div className = "mt-4 flex justify-between">
